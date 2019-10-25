@@ -1,4 +1,6 @@
-package com.ziv.factory;
+package com.ziv.factory.c;
+
+import com.ziv.factory.i.Shape;
 
 /**
  * <p>title:CircleShape </p>

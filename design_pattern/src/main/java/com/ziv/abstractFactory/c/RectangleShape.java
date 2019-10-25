@@ -1,4 +1,7 @@
-package com.ziv.factory;
+package com.ziv.abstractFactory.c;
+
+
+import com.ziv.abstractFactory.i.Shape;
 
 /**
  * <p>title:RetSquareShape </p>
@@ -9,7 +12,8 @@ package com.ziv.factory;
  * @version 1.0
  * @date 2019/10/24 9:00
  */
-public class RectangleShape implements Shape{
+public class RectangleShape implements Shape {
+
     public void draw() {
         System.out.println("draw a rectangle !");
     }

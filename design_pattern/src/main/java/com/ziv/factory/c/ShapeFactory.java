@@ -1,4 +1,6 @@
-package com.ziv.factory;
+package com.ziv.factory.c;
+
+import com.ziv.factory.i.Shape;
 
 /**
  * <p>title:ShapeFactory </p>
@@ -11,7 +13,7 @@ package com.ziv.factory;
  */
 public class ShapeFactory {
 
-    public Shape  getShape(String shape){
+    public Shape getShape(String shape){
         if (shape == null){
             return null;
         }else if("circle".equals(shape)){

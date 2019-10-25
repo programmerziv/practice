@@ -1,4 +1,7 @@
-package com.ziv.factory;
+package com.ziv.abstractFactory.c;
+
+
+import com.ziv.abstractFactory.i.Shape;
 
 /**
  * <p>title:SquareShape </p>
@@ -10,7 +13,6 @@ package com.ziv.factory;
  * @date 2019/10/24 8:58
  */
 public class SquareShape implements Shape {
-
 
     public void draw() {
         System.out.println("draw a square !");

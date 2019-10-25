@@ -1,5 +1,10 @@
 package com.ziv.factory;
 
+import com.ziv.factory.c.ShapeFactory;
+import com.ziv.factory.c.ShapeFactory2;
+import com.ziv.factory.e.ShapeType;
+import com.ziv.factory.i.Shape;
+
 /**
  * <p>title:FactoryDemoMain </p>
  * <p>package: com.ziv.factory</p>

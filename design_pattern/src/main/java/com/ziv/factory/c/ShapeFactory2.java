@@ -1,4 +1,7 @@
-package com.ziv.factory;
+package com.ziv.factory.c;
+
+import com.ziv.factory.e.ShapeType;
+import com.ziv.factory.i.Shape;
 
 /**
  * <p>title: ShapeFactory2</p>
