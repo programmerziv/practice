@@ -1,4 +1,4 @@
-package com.ziv.strategy;
+package com.ziv.strategy.i;
 
 /**
  * <p>title: Strategy</p>

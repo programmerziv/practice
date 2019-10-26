@@ -1,5 +1,10 @@
 package com.ziv.strategy;
 
+import com.ziv.strategy.c.Context;
+import com.ziv.strategy.c.OperationAdd;
+import com.ziv.strategy.c.OperationMultiply;
+import com.ziv.strategy.c.OperationSubstract;
+
 /**
  * <p>title:StrategyMain </p>
  * <p>package: com.ziv.strategy</p>

@@ -1,4 +1,6 @@
-package com.ziv.strategy;
+package com.ziv.strategy.c;
+
+import com.ziv.strategy.i.Strategy;
 
 /**
  * <p>title:OperationSubstract </p>
