@@ -1,4 +1,4 @@
-package com.ziv.criteria;
+package com.ziv.criteria.c;
 
 /**
  * <p>title:Person </p>

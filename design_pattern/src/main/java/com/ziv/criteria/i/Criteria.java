@@ -1,4 +1,6 @@
-package com.ziv.criteria;
+package com.ziv.criteria.i;
+
+import com.ziv.criteria.c.Person;
 
 import java.util.List;
 

@@ -1,4 +1,6 @@
-package com.ziv.criteria;
+package com.ziv.criteria.c;
+
+import com.ziv.criteria.i.Criteria;
 
 import java.util.List;
 
@@ -13,17 +15,16 @@ import java.util.List;
  */
 public class AndCriteria implements Criteria {
 
+    // 条件类作为参数  执行meetCriteria方法，筛选
     private Criteria criteria;
 
     private Criteria otherCriteria;
-
 
     public List<Person> meetCriteria(List<Person> persons) {
 
         List<Person> firstCriteria = criteria.meetCriteria(persons);
 
         List<Person> secondCriteria = otherCriteria.meetCriteria(firstCriteria);
-
         // 与
         return secondCriteria;
     }
