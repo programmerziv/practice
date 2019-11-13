@@ -1,4 +1,7 @@
-package com.ziv.FlyWeight;
+package com.ziv.FlyWeight.c;
+
+import com.ziv.FlyWeight.c.Circle;
+import com.ziv.FlyWeight.i.Shape;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,6 +1,7 @@
 package com.ziv.FlyWeight;
 
-import java.security.PrivateKey;
+import com.ziv.FlyWeight.c.Circle;
+import com.ziv.FlyWeight.c.ShapeFactory;
 
 public class FlyWeightDemoMain {
 

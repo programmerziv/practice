@@ -1,6 +1,8 @@
-package com.ziv.FlyWeight;
+package com.ziv.FlyWeight.c;
 
-public class Circle implements Shape{
+import com.ziv.FlyWeight.i.Shape;
+
+public class Circle implements Shape {
 
     private int x;
 

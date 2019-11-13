@@ -1,4 +1,4 @@
-package com.ziv.FlyWeight;
+package com.ziv.FlyWeight.i;
 
 public interface Shape {
 
