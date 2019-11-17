@@ -1,6 +1,8 @@
-package com.ziv.command;
+package com.ziv.command.c;
 
-public class SellStock implements Order{
+import com.ziv.command.i.Order;
+
+public class SellStock implements Order {
 
     private Stock abcStock;
 

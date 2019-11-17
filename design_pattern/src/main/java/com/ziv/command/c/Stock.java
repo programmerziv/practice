@@ -1,4 +1,4 @@
-package com.ziv.command;
+package com.ziv.command.c;
 
 /**
  * 作为请求的stock类

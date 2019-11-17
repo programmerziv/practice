@@ -1,4 +1,4 @@
-package com.ziv.command;
+package com.ziv.command.i;
 
 /**
  * 作为命令的order
