@@ -1,4 +1,6 @@
-package com.ziv.memento;
+package com.ziv.memento.c;
+
+import com.ziv.memento.c.Memento;
 
 /**
  * 创建并在memento对象中储存状态

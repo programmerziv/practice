@@ -1,5 +1,8 @@
 package com.ziv.memento;
 
+import com.ziv.memento.c.CareTaker;
+import com.ziv.memento.c.Originator;
+
 public class MementoDemoMain {
 
     public static void main(String[] args) {

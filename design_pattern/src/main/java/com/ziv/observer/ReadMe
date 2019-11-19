@@ -1,0 +1,1 @@
+观察者模式定义了对象之间一对多的依赖关系，Subject是一，Observer是多，当Subject对象的状态发生改变时，所有依赖于该Subject的Observer对象会得带通知并自动更新

@@ -1,4 +1,4 @@
-package com.ziv.memento;
+package com.ziv.memento.c;
 
 /**
  * 包含了要恢复对象的状态
