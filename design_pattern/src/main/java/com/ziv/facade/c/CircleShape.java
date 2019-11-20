@@ -1,6 +1,6 @@
-package com.ziv.Facade.c;
+package com.ziv.facade.c;
 
-import com.ziv.Facade.i.Shape;
+import com.ziv.facade.i.Shape;
 
 /**
  * <p>title:CircleShape </p>

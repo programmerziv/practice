@@ -1,7 +1,7 @@
-package com.ziv.FlyWeight;
+package com.ziv.flyWeight;
 
-import com.ziv.FlyWeight.c.Circle;
-import com.ziv.FlyWeight.c.ShapeFactory;
+import com.ziv.flyWeight.c.Circle;
+import com.ziv.flyWeight.c.ShapeFactory;
 
 public class FlyWeightDemoMain {
 

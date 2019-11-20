@@ -1,9 +1,9 @@
-package com.ziv.Facade;
+package com.ziv.facade;
 
-import com.ziv.Facade.c.CircleShape;
-import com.ziv.Facade.c.RectangleShape;
-import com.ziv.Facade.c.ShapeMaker;
-import com.ziv.Facade.c.SquareShape;
+import com.ziv.facade.c.CircleShape;
+import com.ziv.facade.c.RectangleShape;
+import com.ziv.facade.c.ShapeMaker;
+import com.ziv.facade.c.SquareShape;
 
 public class FacadeDemoMain {
 
