@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="design_pattern" />
+        <module name="design_pattern_enhance" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="design_pattern" target="1.5" />
+      <module name="design_pattern_enhance" target="1.5" />
       <module name="Practice" target="1.5" />
     </bytecodeTargetLevel>
   </component>
