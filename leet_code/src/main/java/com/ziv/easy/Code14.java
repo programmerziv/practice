@@ -16,6 +16,7 @@ public class Code14 {
         for(int i = 1; i < strs.length; i++){
             int j = 0;
             // 一一对比时  挨个比较每个字符的长度
+            // 可能两个字符串的长度是不一样的 因此才会有&&
             for(;j < str.length() && j < strs[i].length();j++){
                 // 如果比较时候不相等
                 if(str.charAt(j) != strs[i].charAt(j) ){

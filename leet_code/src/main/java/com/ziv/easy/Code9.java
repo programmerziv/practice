@@ -11,6 +11,7 @@ public class Code9 {
         }
         int tmp = 0;
         int num = x;
+        // 如果不为0  %10 是取最后一位  /=10 的操作是把最后一位给抹掉了
         while (num != 0){
             tmp = tmp * 10 + num % 10;
             num /= 10;
