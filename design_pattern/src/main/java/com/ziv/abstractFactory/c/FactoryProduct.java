@@ -13,9 +13,9 @@ import com.ziv.abstractFactory.a.AbstractFactory;
  */
 public class FactoryProduct {
     public static AbstractFactory getFactory(String factory){
-        if("colour".equals(factory)){
+        if("colour".equalsIgnoreCase(factory)){
             return new ColourFactory();
-        }else if("shape".equals(factory)){
+        }else if("shape".equalsIgnoreCase(factory)){
             return new ShapeFactory();
         }
         return null;
