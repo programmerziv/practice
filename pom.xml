@@ -12,6 +12,8 @@
         <module>design_pattern</module>
         <module>design_pattern_enhance</module>
         <module>leet_code</module>
+        <module>leet_code2</module>
+        <module>leet_code3</module>
     </modules>
 
 

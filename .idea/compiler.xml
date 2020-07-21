@@ -9,16 +9,22 @@
         <module name="design_pattern" />
         <module name="design_pattern_enhance" />
         <module name="leet_code" />
+        <module name="leet_code2" />
+        <module name="leet_code3" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="design_pattern" target="1.5" />
-      <module name="design_pattern_enhance" target="1.5" />
-      <module name="leet_code" target="1.5" />
       <module name="Practice" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="design_pattern" options="" />
+      <module name="design_pattern_enhance" options="" />
+      <module name="leet_code" options="" />
+      <module name="leet_code2" options="" />
+      <module name="leet_code3" options="" />
+    </option>
   </component>
 </project>
