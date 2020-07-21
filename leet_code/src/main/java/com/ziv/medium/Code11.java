@@ -33,10 +33,25 @@ public class Code11 {
         return max;
     }
 
+    /**
+     * 这个是解法2的变形
+     * @param height
+     * @return
+     */
+    public static int maxArea3(int[] height) {
+        int max = 0,i = 0, j = height.length -1;
+        while (i < j) {
+            max = height[i] < height[j]?
+                    Math.max((j - i) * height[i++],max):
+                    Math.max((j - i) * height[j--],max);
+        }
+        return max;
+    }
+
 
     public static void main(String[] args) {
         int[] heignt = {1,8,6,2,5,4,8,3,7};
-        maxArea2(heignt);
+        System.out.println(maxArea3(heignt));
 
 
     }
