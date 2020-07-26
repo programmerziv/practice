@@ -27,7 +27,7 @@ public class Code11 {
         return max;
     }
     /**
-     * 双重循环 时间复杂度O(n^2)
+     * 左右夹逼  时间复杂度 O(n)
      * @param height
      * @return
      */
@@ -41,7 +41,7 @@ public class Code11 {
         return max;
     }
     /**
-     * 双重循环 时间复杂度O(n^2)
+     * 优化 左右夹逼  时间复杂度 O(n)
      * @param height
      * @return
      */
