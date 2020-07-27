@@ -1,17 +1,28 @@
 package com.ziv.easy;
 
 
+import java.util.List;
 
 /**
- * <p>title: 反转一个链表</p>
+ * <p>title:反转链表 </p>
  * <p>package: com.ziv.easy</p>
  * <p>description: </p>
  *
  * @author zhangzong
  * @version 1.0
- * @date 2020/7/26 17:39
+ * @date 2020/7/27 8:57
  */
 public class Code206 {
+
+    static class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) {
+            val = x;
+        }
+
+    }
+
 
 
     public static ListNode reverseList(ListNode head) {
@@ -38,27 +49,7 @@ public class Code206 {
 
 
 
-    static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-        }
 
 
-    }
 
-
-    public static void main(String[] args) {
-        ListNode listNode1 =  new ListNode(1);
-        ListNode listNode2 =  new ListNode(2);
-        ListNode listNode3 =  new ListNode(3);
-        ListNode listNode4 =  new ListNode(4);
-        ListNode listNode5 =  new ListNode(5);
-        listNode1.next = listNode2;
-        listNode2.next = listNode3;
-        listNode3.next = listNode4;
-        listNode4.next = listNode5;
-        reverseList2(listNode1);
-    }
 }
