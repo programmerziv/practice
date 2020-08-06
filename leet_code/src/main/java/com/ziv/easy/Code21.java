@@ -16,8 +16,6 @@ public class Code21 {
     }
 
     public static ListNode mergeTwoLists(ListNode l1,ListNode l2){
-
-
         if(l1 == null){
             return l2;
         }
