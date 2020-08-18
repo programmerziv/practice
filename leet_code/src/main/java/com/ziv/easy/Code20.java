@@ -46,14 +46,46 @@ public class Code20 {
     }
 
 
+    public static boolean validBracket2(String str){
+        Stack<Character> stack = new Stack<Character>();
+        char[] chars = str.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] == '(') {
+                stack.push(')');
+            } else if (chars[i] == '{') {
+                stack.push('}');
+            } else if (chars[i] == '[') {
+                stack.push(']');
+            } else if (stack.isEmpty() || stack.pop() != chars[i]) {
+                return false;
+            }
+        }
+
+        return stack.isEmpty();
+    }
+
+
+    public static boolean isValid3(String s) {
+        if (  s == null || s.equals("")  ||s.length() % 2 != 0) {
+            return false;
+        }
+        while (s.contains("()") || s.contains("[]") || s.contains("{}")) {
+            s = s.replace("()","");
+            s = s.replace("[]","");
+            s = s.replace("{}","");
+        }
+        return s.length() == 0;
+    }
+
+
     public static void main(String[] args) {
         String str1 = "{}{}[()]";
         String str2 = "{}{}[()]{";
         String str3 = "{}{}[()]1";
 
-        System.out.println(validBracket(str1));
-        System.out.println(validBracket(str2));
-        System.out.println(validBracket(str3));
+        System.out.println(isValid3(str1));
+        System.out.println(isValid3(str2));
+        System.out.println(isValid3(str3));
 
 
     }
