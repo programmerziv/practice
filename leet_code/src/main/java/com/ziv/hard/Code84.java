@@ -1,7 +1,5 @@
 package com.ziv.hard;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
 import java.util.Stack;
 
 /**
@@ -23,10 +21,10 @@ public class Code84 {
         for (int i = 0; i < heights.length; i++) {
             int left = i,right = i;
             int mid = heights[i];
-            while (left > 0 && heights[left] >= mid) {
+            while (left > 0 && heights[left - 1] >= mid) {
                 left --;
             }
-            while (right < heights.length - 1 && heights[right] >= mid) {
+            while (right < heights.length - 1 && heights[right + 1] >= mid) {
                 right ++;
             }
             maxArea = Math.max((right - left + 1) * mid,maxArea);
