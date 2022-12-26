@@ -1,7 +1,14 @@
 桥接模式中，具体的实现类放在作为“桥梁”的接口中实现，而“桥梁”接口中只有实现功能的抽象方法；
-具体实现类是继承“桥梁”，而不直接继承实现类的抽象类，抽象类与具体的实现类在结构上是相互独立的，
+具体实现类是继承“桥梁”，而不直接继承实现类的抽象类，抽象类（Shape）与具体的实现类（RedCircle，GreenCircle）在结构上是相互独立的，
 两者的相互变化并不会影响到彼此，只要“桥梁”没变，两者的变化并不会影响到彼此。
 
 具体的实现是RedCircle、GreenCircle，它们的抽象类为Shape，但Shape与两者没有直接关系，
 按一般逻辑来说，我们是直接继承Shape来创建不同的具体对象，但桥接模式中是通过“桥梁”DrawAPI建立抽象与具体实现之间的联系，
 调用DrawAPI中的方法来具体实现。
+适配器整体思路是这样的：
+1.首先是有接口DrawAPI，然后两个具体实现RedCircle，GreenCircle
+2.然后有个抽象类Shape，里面引入对应的DrawAPI作为属性，但单独定义一个方法，不要和接口中的方法重名
+3.在新建一个CircleShape实现类继承Shape，此类中实现抽象类中的方法，
+但具体的里面实现DrawAPI的方法（DrawAPI是抽象类Shape的属性，CircleShape继承了Shape），这样看起来CircleShape和DrawAPI没关系，
+却用了DrawAPI的方法
+4.应用的时候只需要new CircleShape得到具体的实例，就可以根据参数应用DrawAPI的方法了

@@ -24,6 +24,7 @@ public class BridgeDemoMain {
 
 
         // shape的draw方法和redCircle的drawCircle(radius,x,y)有着区别
+        // 看似用的是shape的draw，其实还是DrawAPI中的drawCircle(radius,x,y)
         redCircle.draw();
 
         greenCircle.draw();

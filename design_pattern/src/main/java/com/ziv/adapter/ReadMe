@@ -1,0 +1,12 @@
+1.适配器模式很明显的特点是两个接口，而其他类似的模式比如装饰者模式或者代理模式都是只有一个接口
+2.适配器模式一般都是项目维护期加新功能时候加入的
+
+适配器整体思路是这样的：
+1.项目一开始时候一般只有一个接口 例如此方法中的MediaPlayer
+2.AudioPlayer实现了MediaPlayer实现其中方法就结束了
+3.后来新增功能 就新增接口 AdvanceMediaPlayer，对应的接口实现是Mp4Player 和 VlcPlayer
+4.现在想集成在AudioPlayer里，首先要有一个适配器MediaAdapter，实现之前的MediaPlayer，但在适配器中有属性 AdvanceMediaPlayer，
+这样在实现MediaPlayer的方法时候就可以根据参数调用AdvanceMediaPlayer的实现类Mp4Player 和 VlcPlayer的具体实现了
+5.最后将适配器MediaAdapter作为参数注入到实现类 MediaPlayer中 ，增加新的判断，如果是之前的参数，还走之前的逻辑，如果是新的参数，
+则走新的逻辑
+6.使用的时候，我们也只是new AudioPlayer，不会暴露出适配器，主要是只要根据参数就已经改变具体实现了，不用动new AudioPlayer的类的内容

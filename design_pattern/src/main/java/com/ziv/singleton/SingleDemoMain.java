@@ -50,7 +50,7 @@ public class SingleDemoMain {
         System.out.println("----------------------------\n\r");
 
 
-        // 针对普通饿汉式可能存在的反射破解  反射之后得到的是
+        // 针对普通懒汉式可能存在的反射破解  反射之后得到的是
         Class clazz = Class.forName("com.ziv.singleton.c.SingletonObject2");
         Constructor constructor = clazz.getDeclaredConstructor(null);
         constructor.setAccessible(true);
