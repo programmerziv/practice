@@ -1,0 +1,9 @@
+# 基本配置
+spring:
+  application:
+    name: redission_test
+  redis:
+    host: localhost
+    port: 6379
+logging:
+  config: classpath:logback-spring.xml
